@@ -1,4 +1,4 @@
 Model,Train Score,Test Score,Benign-Precision,Benign-Recall,Benign F1-score,Malign-Precision,Malign Recall,Malign F1-score,Accuracy
-Logisitic Regression,0.991,0.964,0.959,0.986,0.972,0.975,0.929,0.952,0.965
+Logistic Regression,0.991,0.964,0.959,0.986,0.972,0.975,0.929,0.952,0.965
 Decision Tree -Random Forest,0.921,0.964,0.953,0.993,0.973,0.987,0.918,0.951,0.965
 KNN (n_neighbors = 5),0.962,0.952,0.934,0.993,0.963,0.987,0.882,0.932,0.952
