@@ -1,0 +1,142 @@
+
+#elsample_1, #elsample_2{
+	height: 300px;
+	background-color: #e9ecef;
+	margin-bottom: 1em;
+	padding:10px;
+}
+
+#elsummary_1, #elsummary_2{
+	height: 300px;
+	background-color: #e9ecef;
+	margin-bottom: 1em;
+	padding: 10px;
+}
+
+
+
+#eldetails_1, #eldetails_2{
+	height: 300px;
+	background-color: #e9ecef;
+	margin-bottom: 1em;
+	padding: 10px;
+}
+
+#elsummary_1:hover, #elsummary_2:hover,
+#eldetails_1:hover, #eldetails_2:hover,
+#elsample_1:hover, #elsample_2:hover,#elcompare_1:hover	{
+	box-shadow: 10px 10px 5px grey;
+    background-color: cadetblue;
+}
+
+
+
+#elcompare_1, #elcompare_2{
+	height: 600px;
+	background-color: #e9ecef;
+	margin-bottom: 1em;
+	padding:10px;
+}
+
+.img_export{
+	width: 100%;
+	height: 100%;
+}
+
+
+.mapFilterText text{
+	font-family: sans-serif;
+	font-size: 16px;
+	text-anchor: middle;
+}
+
+
+.active {
+	font-weight: bold;
+	fill: #000;
+	transition: fill 0.3s ease-out;
+	text-anchor: middle;
+  }
+
+ .inactive {
+	font-weight: lighter;
+	fill: #c9c9c9;
+	transition: fill 0.3s ease-out;
+	text-anchor: middle;
+  }
+  
+.inactive:hover {
+	fill: #000;
+	cursor: pointer;
+}
+
+.tagged_vote{
+	stroke: red;
+}
+
+.hide_section{
+	display:none;
+}
+.show_section{
+	display:block;
+}
+
+
+.show_const{
+	display:block;
+}
+
+.hide_const{
+	display:none;
+}
+
+
+.brexit_yes{
+	fill-opacity: 0.5;
+}
+
+.brexit_no{
+	fill-opacity: 0.1;
+}
+
+/*side bar */
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
+

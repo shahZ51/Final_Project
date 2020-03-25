@@ -1,0 +1,48 @@
+
+/*--- dashboard toolbar --*/
+#dash_toolbar ul{
+    list-style-type:none;
+  }
+#dash_toolbar .dash_ctrl{
+    display: inline;
+    cursor: pointer;
+}
+/*
+#dash_toolbar li div{
+width:50px;height: 50px; 
+margin-bottom: 5px;
+border-style:  solid;
+}
+*/
+
+/*-- dashboard main --*/
+
+#dash_canvas .container{
+    padding: 1px; 
+    margin-left: unset; 
+    min-height: 500px; 
+}
+
+#dash_canvas .init_border{
+    border-style: dashed;
+    border-width:1px; 
+    border-color: gray; 
+}
+
+
+#dash_canvas .se_selected{  /*selected section or element*/
+    border-color: blue;
+}
+
+#dash_canvas .row{
+    min-height: 40px; 
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom: 1px;
+    padding:1px;
+    width:100%
+}
+
+.ti_section{
+    overflow:auto;
+}
