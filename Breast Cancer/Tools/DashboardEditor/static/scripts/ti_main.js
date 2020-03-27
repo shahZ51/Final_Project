@@ -1206,7 +1206,7 @@ function loadDlgDataset(div_config_elements,elem){
         txt_dataset_name.node().value = "";
         txt_dataset_link.node().value = "";
 
-        txt_dataset_link.node().value = "./static/data/MemberListSummary.csv"; //REMOVE after testing
+        txt_dataset_link.node().value = ""; //REMOVE after testing
     });
 
     

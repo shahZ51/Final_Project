@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 
 def predict(params):
     # Reading data
-    final_data = pd.read_csv('final_data.csv')
+    final_data = pd.read_csv('./static/data/final_data.csv')
 
     # Assign X (data) and y (target)
     X = final_data[["concave points_mean", "area_mean", "area_se"]]
