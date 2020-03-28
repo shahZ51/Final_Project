@@ -17,14 +17,8 @@ Correlation matrix output
 
 Final data set
 
- deploy the tool to Heroku and the final presentation webapp also accessible online.
-So we can now submit the project with the following links
-Webapp - Final Presentation
-Webapp - Dashboard Creator
-Source Codes, Jupiter Notebooks, Raw Data, Graphs / Images etc.
-
-
 Webapp - Final Presentation
 https://arnoldmacamos.github.io/breast_cancer/index.html
+
 Webapp - Dashboard Creator
 https://tie-app.herokuapp.com/
