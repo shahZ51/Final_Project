@@ -5,7 +5,7 @@ The purpose of our project is to propose a machine learning method forbreast can
 
 Data: https://www.kaggle.com/uciml/breast-cancer-wisconsin-data
 
-Tools: Python, pandas, plotly-Tableau -Javascript -AWS PostgresSQL-HTML/CSS
+Tools: Python, pandas, plotly-Heroku, ML models,  -Javascript -D3 PostgresSQL-HTML/CSS
 
 
 The folder has the following files:
@@ -16,3 +16,15 @@ Jupyter notebook labeled as Breast_Cancer_Exploratory Analysis. It has all the s
 Correlation matrix output
 
 Final data set
+
+ deploy the tool to Heroku and the final presentation webapp also accessible online.
+So we can now submit the project with the following links
+Webapp - Final Presentation
+Webapp - Dashboard Creator
+Source Codes, Jupiter Notebooks, Raw Data, Graphs / Images etc.
+
+
+Webapp - Final Presentation
+https://arnoldmacamos.github.io/breast_cancer/index.html
+Webapp - Dashboard Creator
+https://tie-app.herokuapp.com/
