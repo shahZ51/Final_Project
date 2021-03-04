@@ -1,0 +1,62 @@
+
+<html lang="en-us">
+  <head>
+	<title>Breast Cancer Data Analysis</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+    <!-- Leaflet JS & CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+	crossorigin=""></script>
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+	
+  </head>
+  <body>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Home</a>
+		<a href="#" class="dash_select" dash_link="https://tie-app.herokuapp.com/dashview?refid=4523cc94-fea7-4433-b6bd-2b489ee4f7d4">BC - Introduction</a>			
+		<a href="#" class="dash_select" dash_link="https://tie-app.herokuapp.com/dashview?refid=9fa7c5ed-50b9-4795-a210-7508a4611629">BC - Data Analysis</a>
+		<a href="#" class="dash_select" dash_link="https://tie-app.herokuapp.com/dashview?refid=c4693bef-66b6-425f-91a1-ba58725b8a75">BC - Machine Learning Models</a>
+		<a href="#" class="dash_select" dash_link="https://tie-app.herokuapp.com/dashview?refid=3b10e0b7-b740-41da-97d1-26d8cb84411e">BC - Conclusion</a>
+		<a href="#" class="dash_select" dash_link="https://tie-app.herokuapp.com/dashview?refid=ed6f68c1-dcab-4bc8-84dc-b62bbee4c3fc">BC - Test App</a>			
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<div id="content" class="container-fluid">
+		<iframe id="myIFrame"   style="width:100%;height:100%;overflow: hidden; border:none; position: absolute;"  >
+			<p>Your browser does not support iframes.</p>
+		  </iframe>
+	</div>   
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+	<script  type="text/javascript">
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+		
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+
+		d3.select("#mySidenav").selectAll(".dash_select").on("click",function(){
+			dash_link = (d3.select(this).attr("dash_link"));
+			document.getElementById('myIFrame').src = dash_link;
+			closeNav();
+		});
+
+		d3.select("#mySidenav").select(".dash_select").dispatch("click");
+	</script>
+	
+  </body>
+</html>

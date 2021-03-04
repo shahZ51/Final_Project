@@ -5,7 +5,9 @@ The purpose of our project is to propose a machine learning method forbreast can
 
 Data: https://www.kaggle.com/uciml/breast-cancer-wisconsin-data
 
-Tools: Python, pandas, plotly-Heroku, ML models, -Javascript -D3 PostgresSQL-HTML/CSS
+
+Tools: Python, pandas, plotly-Heroku, ML models,  -Javascript -D3 PostgresSQL-HTML/CSS
+
 
 The folder has the following files:
 
@@ -20,3 +22,12 @@ Webapp - Final Presentation https://arnoldmacamos.github.io/breast_cancer/index.
 Webapp - Dashboard Creator https://tie-app.herokuapp.com/
 
 Source Codes, Jupiter Notebooks, Raw Data, Graphs / Images etc. https://github.com/shahZ51/Final_Project
+=======
+Webapp - Final Presentation
+https://arnoldmacamos.github.io/breast_cancer/index.html
+
+Webapp - Dashboard Creator
+https://tie-app.herokuapp.com/
+
+Source Codes, Jupiter Notebooks, Raw Data, Graphs / Images etc.
+https://github.com/shahZ51/Final_Project

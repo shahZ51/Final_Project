@@ -1,0 +1,35 @@
+CREATE DATABASE tie_db
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'English_Canada.1252'
+    LC_CTYPE = 'English_Canada.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+	
+
+-- Table: public.items
+
+-- DROP TABLE public.items;
+
+CREATE TABLE public.items
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 2147483647 CACHE 1 ),
+    refid uuid DEFAULT uuid_generate_v4(),
+    type character varying(20) COLLATE pg_catalog."default",
+    content json,
+    is_published boolean,
+    version integer,
+    is_deleted boolean,
+    created_date timestamp without time zone,
+    created_by character varying(50) COLLATE pg_catalog."default",
+    updated_date timestamp without time zone,
+    updated_by character varying(50) COLLATE pg_catalog."default",
+    name character varying(1000) COLLATE pg_catalog."default",
+    CONSTRAINT items_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE public.items
+    OWNER to postgres;
